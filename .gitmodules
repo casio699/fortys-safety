@@ -1,0 +1,3 @@
+[submodule "fortys-safety"]
+	path = fortys-safety
+	url = https://github.com/casio699/fortys-safety.git
