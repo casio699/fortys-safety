@@ -19,7 +19,7 @@ const ClientLogoBanner = () => {
   const duplicatedLogos = [...clientLogos, ...clientLogos]
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-gray-200 py-3 z-40">
+    <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-blue-600 to-green-600/95 backdrop-blur border-t border-white/20 py-3 z-40">
       <div className="relative overflow-hidden group">
         <div
           className="flex space-x-8 animate-scroll-x"
@@ -28,11 +28,11 @@ const ClientLogoBanner = () => {
           {duplicatedLogos.map((client, index) => (
             <div
               key={`${client.name}-${index}`}
-              className="flex-shrink-0 flex items-center justify-center w-36 h-12 bg-gray-50 border border-gray-200 rounded-lg px-4 shadow-sm"
+              className="flex-shrink-0 flex items-center justify-center w-36 h-12 bg-white/10 backdrop-blur border border-white/20 rounded-lg px-4 shadow-sm"
             >
               <div className="text-center">
-                <div className="text-base font-semibold text-gray-700 tracking-wide">{client.logo}</div>
-                <div className="text-[11px] text-gray-500">{client.name}</div>
+                <div className="text-base font-semibold text-white tracking-wide">{client.logo}</div>
+                <div className="text-[11px] text-white/80">{client.name}</div>
               </div>
             </div>
           ))}

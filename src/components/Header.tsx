@@ -49,10 +49,10 @@ const Header = () => {
       isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-32">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-32 h-32 flex items-center justify-center">
+            <div className="w-48 h-48 flex items-center justify-center">
               <img 
                 src="/fortys-logo.png" 
                 alt="Fortys-Safety Logo" 

@@ -13,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--background)' }}>
       <Header />
-      <main id="main-content" className="pt-20 lg:pt-32 pb-24">
+      <main id="main-content" className="pt-32 lg:pt-40 pb-24">
         {children}
       </main>
       <Footer />

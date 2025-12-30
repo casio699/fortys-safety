@@ -142,9 +142,16 @@ const Footer = () => {
               <p className="text-sm text-secondary-300 mb-2">
                 Website created and supported by
               </p>
-              <h5 className="text-lg font-semibold text-primary-400">
-                {kitsInfo.name}
-              </h5>
+              <div className="flex items-center space-x-3">
+                <img 
+                  src="/kits-logo.png" 
+                  alt="KiTS Logo" 
+                  className="w-8 h-8 object-contain"
+                />
+                <h5 className="text-lg font-semibold text-primary-400">
+                  {kitsInfo.name}
+                </h5>
+              </div>
             </div>
             
             <div className="flex flex-wrap items-center gap-4">
