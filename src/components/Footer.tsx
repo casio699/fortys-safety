@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook, ExternalLink } from 'lucide-react'
 
 const Footer = () => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/fortys-safety' : ''
   const contactInfo = {
     phone: '+961 3 123 456',
     whatsapp: '+961 3 123 456',
@@ -47,7 +48,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src="/fortys-logo.png" alt="Fortys-Safety Logo" className="w-12 h-12 object-contain" />
+              <img src={`${basePath}/fortys-logo.png`} alt="Fortys-Safety Logo" className="w-12 h-12 object-contain" />
               <h3 className="text-xl font-bold text-white">Fortys-Safety</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
@@ -144,7 +145,7 @@ const Footer = () => {
               </p>
               <div className="flex items-center space-x-3">
                 <img 
-                  src="/kits-logo.png" 
+                  src={`${basePath}/kits-logo.png`} 
                   alt="KiTS Logo" 
                   className="w-8 h-8 object-contain"
                 />

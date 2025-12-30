@@ -8,6 +8,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [isClient, setIsClient] = useState(false)
+  const basePath = process.env.NODE_ENV === 'production' ? '/fortys-safety' : ''
 
   useEffect(() => {
     setIsClient(true)
@@ -54,7 +55,7 @@ const Header = () => {
           <Link href="/" className="flex items-center space-x-3">
             <div className="w-48 h-48 flex items-center justify-center">
               <img 
-                src="/fortys-logo.png" 
+                src={`${basePath}/fortys-logo.png`} 
                 alt="Fortys-Safety Logo" 
                 className="w-full h-full object-contain"
               />

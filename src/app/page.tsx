@@ -7,6 +7,7 @@ import Layout from '@/components/Layout'
 import AnimatedCounter from '@/components/AnimatedCounter'
 
 const HomePage = () => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/fortys-safety' : ''
   const stats = [
     { value: 9, label: 'Years of Experience', suffix: '+' },
     { value: 150, label: 'Satisfied Clients', suffix: '+' },
@@ -63,7 +64,7 @@ const HomePage = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-green-600/20"></div>
           <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-500/30 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
-          <div className="absolute inset-0 bg-[url('/fortys-logo.png')] bg-center bg-no-repeat opacity-[0.03]"></div>
+          <div className="absolute inset-0 bg-center bg-no-repeat opacity-[0.03]" style={{backgroundImage: `url('${basePath}/fortys-logo.png')`}}></div>
         </div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
