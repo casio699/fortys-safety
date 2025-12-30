@@ -20,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr" data-scroll-behavior="smooth">
       <head>
-        <link rel="icon" href={`${basePath}/favicon.ico`} />
-        <link rel="apple-touch-icon" sizes="180x180" href={`${basePath}/apple-touch-icon.png`} />
+        <link rel="icon" href={`${basePath}/favicon-96x96.png`} />
+        <link rel="apple-touch-icon" sizes="180x180" href={`${basePath}/fortys-logo.png`} />
+        <link rel="icon" type="image/png" sizes="128x128" href={`${basePath}/favicon-128x128.png`} />
+        <link rel="icon" type="image/png" sizes="64x64" href={`${basePath}/favicon-64x64.png`} />
         <link rel="icon" type="image/png" sizes="32x32" href={`${basePath}/favicon-32x32.png`} />
         <link rel="icon" type="image/png" sizes="16x16" href={`${basePath}/favicon-16x16.png`} />
         <link rel="manifest" href={`${basePath}/manifest.webmanifest`} />
