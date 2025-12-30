@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Phone, Mail, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react'
+import { Phone, Mail, MapPin, Send, CheckCircle, AlertCircle, Linkedin, MessageCircle, Instagram, Facebook } from 'lucide-react'
 import Layout from '@/components/Layout'
 
 interface FormData {
@@ -361,7 +361,7 @@ export default function ContactPage() {
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
                     >
-                      <span className="text-sm font-bold">in</span>
+                      <Linkedin size={18} />
                     </a>
                     <a
                       href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, '')}`}
@@ -369,7 +369,7 @@ export default function ContactPage() {
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center hover:bg-green-700 transition-colors"
                     >
-                      <span className="text-sm font-bold">WA</span>
+                      <MessageCircle size={18} />
                     </a>
                     <a
                       href={contactInfo.instagram}
@@ -377,7 +377,7 @@ export default function ContactPage() {
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-pink-600 text-white rounded-lg flex items-center justify-center hover:bg-pink-700 transition-colors"
                     >
-                      <span className="text-sm font-bold">ig</span>
+                      <Instagram size={18} />
                     </a>
                     <a
                       href={contactInfo.facebook}
@@ -385,7 +385,7 @@ export default function ContactPage() {
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-blue-700 text-white rounded-lg flex items-center justify-center hover:bg-blue-800 transition-colors"
                     >
-                      <span className="text-sm font-bold">fb</span>
+                      <Facebook size={18} />
                     </a>
                   </div>
                 </div>
