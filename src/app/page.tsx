@@ -56,7 +56,7 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <div className="min-h-screen bg-white">
+      <div>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="absolute inset-0 bg-[url('/fortys-logo.png')] bg-center bg-no-repeat opacity-[0.02]"></div>
