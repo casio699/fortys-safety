@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook, ExternalLink } from 'lucide-react'
+import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook, ExternalLink, MessageCircle } from 'lucide-react'
 
 const Footer = () => {
   const basePath = process.env.NODE_ENV === 'production' ? '/fortys-safety' : ''
@@ -48,7 +48,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src={`${basePath}/fortys-logo.png`} alt="Fortys-Safety Logo" className="w-12 h-12 object-contain" />
+              <img src={`${basePath}/fortys-logo.png`} alt="Fortys-Safety Logo" className="w-16 h-16 object-contain" />
               <h3 className="text-xl font-bold text-white">Fortys-Safety</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
@@ -56,13 +56,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a href="https://linkedin.com/company/fortys-safety" className="w-10 h-10 bg-primary-600 text-white rounded-lg flex items-center justify-center hover:bg-primary-700 transition-colors">
-                <span className="text-sm font-bold">in</span>
+                <Linkedin size={18} />
               </a>
               <a href="https://instagram.com/fortys-safety" className="w-10 h-10 bg-pink-600 text-white rounded-lg flex items-center justify-center hover:bg-pink-700 transition-colors">
-                <span className="text-sm font-bold">ig</span>
+                <Instagram size={18} />
               </a>
               <a href="https://facebook.com/fortys-safety" className="w-10 h-10 bg-blue-700 text-white rounded-lg flex items-center justify-center hover:bg-blue-800 transition-colors">
-                <span className="text-sm font-bold">fb</span>
+                <Facebook size={18} />
               </a>
             </div>
           </div>
@@ -169,7 +169,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-sm text-secondary-300 hover:text-primary-400 transition-colors"
               >
-                <Phone size={16} />
+                <MessageCircle size={16} />
                 <span>WhatsApp</span>
               </a>
               <a 
